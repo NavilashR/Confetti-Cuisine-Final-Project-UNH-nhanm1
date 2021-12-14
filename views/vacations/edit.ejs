@@ -1,0 +1,33 @@
+<div class="data-form">
+  <form class="form-signin" action="<%=`/vacations/${vacation._id}/update?_method=PUT`%>" method="POST">
+    <h2 class="form-signin-heading">Edit course:</h2>
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" value="<%= vacation.title %>" class="form-control" placeholder="Title" autofocus>
+
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" value="<%= vacation.description %>" class="form-control" placeholder="Description">
+
+    <label for="Cuisine">Cuisine</label>
+    <input type="text" name="cuisine" id="cuisine" class="form-control" value="<%= vacation.cuisine %>" placeholder="Cuisine" required>
+
+    <label for="inputCost">Cost</label>
+    <input type="text" name="cost" id="cost" pattern="\d*" value="<%= vacation.cost %>" class="form-control" placeholder="Cost" required>
+
+    <label for="inputCost">No of Travellers</label>
+    <input type="text" name="maxTravelers" id="maxTravelers" pattern="\d*" value="<%= vacation.maxTravelers %>" class="form-control" placeholder="No of Travellers" required>
+    
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" id="destination" value="<%= vacation.destination %>" class="form-control" placeholder="Destination" required>
+
+    <label for="departureLocation">Departure Location</label>
+    <input type="text" name="departureLocation" id="departureLocation" value="<%= vacation.departureLocation %>"  class="form-control" placeholder="Departure Location" required>
+
+
+    <label for="departureDate">Departure Date</label>
+    <input type="date" name="departureDate" id="departureDate" value="<%= vacation.departureDate %>"  class="form-control" placeholder="Departure Date" required>
+
+    <label for="returnDate">Return Date</label>
+    <input type="date" name="returnDate" id="returnDate" value="<%= vacation.returnDate %>"  class="form-control" placeholder="Return Date" required>
+    <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+  </form>
+</div>

@@ -1,0 +1,34 @@
+<div class="data-form">
+  <form class="form-signin" action="<%=`/vacations/create`%>" method="POST">
+    <h2 class="form-signin-heading">Create a new vacation:</h2>
+    <label for="inputTitle">Title</label>
+    <input type="text" name="title" id="inputTitle" class="form-control" placeholder="Title" autofocus>
+
+    <label for="inputDescription">Description</label>
+    <input type="text" name="description" id="inputDescription" class="form-control" placeholder="Description">
+
+    <label for="Cuisine">Cuisine</label>
+    <input type="text" name="Cuisine" id="Cuisine" class="form-control" placeholder="Cuisine" required>
+
+    <label for="inputCost">Cost</label>
+    <input type="text" name="cost" id="inputCost" pattern="\d*" class="form-control" placeholder="Cost" required>
+
+    <label for="inputCost">No of Travellers</label>
+    <input type="text" name="maxTravelers" id="maxTravelers" pattern="\d*" class="form-control" placeholder="No of Travellers" required>
+    
+    <label for="destination">Destination</label>
+    <input type="text" name="destination" id="destination" class="form-control" placeholder="Destination" required>
+
+    <label for="departureLocation">Departure Location</label>
+    <input type="text" name="departureLocation" id="departureLocation"  class="form-control" placeholder="Departure Location" required>
+
+
+    <label for="departureDate">Departure Date</label>
+    <input type="date" name="departureDate" id="departureDate"  class="form-control" placeholder="Departure Date" required>
+
+    <label for="returnDate">Return Date</label>
+    <input type="date" name="returnDate" id="returnDate"  class="form-control" placeholder="Return Date" required>
+    
+    <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+  </form>
+</div>
